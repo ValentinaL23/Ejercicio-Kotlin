@@ -1,4 +1,4 @@
-package com.example.OperacionTL
+package com.example.Operaciones
 
 import com.example.Operacion
 import io.ktor.http.*
@@ -34,7 +34,7 @@ fun Route.rutaOperacion() {
           call.respondText(result.toString())
         }
       } else {
-        call.respondText("no hay operaciones")
+        call.respondText("No hay operaciones")
       }
     }
 
