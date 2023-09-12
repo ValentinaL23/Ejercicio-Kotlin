@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Operacion (
-  val valor1: Int,
-  val operador: String,
-  val valor2: Int
+  var valor1: Int,
+  var operador: String,
+  var valor2: Int
 )

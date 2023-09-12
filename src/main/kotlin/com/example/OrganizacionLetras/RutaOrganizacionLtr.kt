@@ -13,7 +13,7 @@ fun Route.rutaOrganizacion() {
   route("/organizacion") {
     get {
       if (letras.isNotEmpty()) {
-        letras.sort()
+        letras.sorted()
       } else {
           call.respondText("No hay letras")
       }
