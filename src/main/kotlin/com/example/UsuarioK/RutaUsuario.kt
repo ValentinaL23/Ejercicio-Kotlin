@@ -15,12 +15,7 @@ private var listaUsuarios: Usuario = (
 fun Route.rutaUsuario() {
   route("/usuario") {
     get{
-      /*if (usuarios.isNotEmpty()) {
-      } else {
-        call.respondText("No hay usuarios",
-          status = HttpStatusCode.OK)
-      }*/
-        call.respond(listaUsuarios)
+      call.respond(listaUsuarios)
     }
 
     post {
